@@ -1,0 +1,20 @@
+{
+"name": "EventDriven",
+"frameworks": "Arduino",
+"keywords": "eventdriven, 1-wire, bus, sensor, temperature, ibutton",
+"description": "Control 1-Wire protocol (DS18S20, DS18B20, DS2408 and etc)",
+"authors":
+[
+    {
+        "name": "Axente Adrian",
+        "email": "adrianaxente@yahoo.com",
+        "url": "http://www.axy.com",
+        "maintainer": true
+    },
+],
+"repository":
+{
+    "type": "git",
+    "url": "https://github.com/adrianaxente/Event-Driven"
+}
+}
