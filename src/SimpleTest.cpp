@@ -1,13 +1,29 @@
 #include <Arduino.h>
-#include <Event.h>
+#include <Delegate.h>
 
-Event<int> testEvent;
+
+struct ExampleStruct
+{
+      void doSomething(int arg)
+      {
+      }
+};
+
+void testFunction(int arg)
+{
+
+}
+
+ExampleStruct exa;
+Delegate<void, int> testFunctionDelegate(&testFunction);
 
 void setup(void)
 {
+
 }
 
 void loop(void)
 {
-  testEvent.Raise(100);
+  exa.doSomething(200);
+  testFunctionDelegate(100);
 }
